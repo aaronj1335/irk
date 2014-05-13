@@ -1,0 +1,25 @@
+{
+  "name": "irk",
+  "version": "0.0.0",
+  "description": "irc notifications in os x notification center",
+  "main": "index.js",
+  "homepage": "https://github.com/aaronj1335/irk",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:aaronj1335/irk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aaronj1335/irk/issues"
+  },
+  "scripts": {
+    "start": "nohup ./index.js &>logs/out.log &\n echo $! > logs/pid.txt",
+    "stop": "[ -f logs/pid.txt ] && kill `cat logs/pid.txt` 2>/dev/null; rm -f logs/pid.txt",
+    "test": "echo \"lol ur so dum\" && exit 0"
+  },
+  "author": "Aaron Stacy <aaron.r.stacy@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "irc-js": "~2.0.0-beta.5",
+    "node-notifier": "~2.0.4"
+  }
+}
