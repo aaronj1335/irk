@@ -1,6 +1,6 @@
 # `irk`
 
-scriptable irc notifications
+> scriptable irc notifications
 
 ## running
 
@@ -43,6 +43,17 @@ to a bouncer running somewhere w/ a self-signed cert. no worries, just put that
   "password": "pass1234"
 }
 ```
+
+you can configure the rest of the connection in `lib/connect.js`.
+
+## logging
+
+it all goes in the repo's `logs` directory. there's some good stuff in there
+you should check it out some time.
+
+## node tls is weird
+
+apologies for `index.js`.
 
 [handlers]: /aaronj1335/irk/master/lib/handlers.js
 [ircjs]: https://github.com/gf3/IRC-js
